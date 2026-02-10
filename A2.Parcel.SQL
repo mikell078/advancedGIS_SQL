@@ -1,3 +1,4 @@
+CREATE OR REPLACE VIEW student.v_parcels_final AS
 SELECT
 	pin,
 	acres_poly,
@@ -23,6 +24,7 @@ LEFT	JOIN
 defaultdb.enterprise.parcel_sales
 ON
 defaultdb.enterprise.parcel_sales.pin = defaultdb.enterprise.parcels_core.pin
-WHERE defaultdb.enterprise.parcel_sales.sale_value > 300000
+WHERE defaultdb.enterprise.parcel_sales.sale_value > 300000;
+
 
 #Layer where sale value is above 300000 and joining two tables
