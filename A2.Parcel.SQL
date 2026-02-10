@@ -1,3 +1,5 @@
+~~ Mikell Schoonover's Query
+~~ finding sales over 300000 and acreage between 1-5
 CREATE OR REPLACE VIEW student.v_parcels_final AS
 SELECT
 	pin,
